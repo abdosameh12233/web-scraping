@@ -42,7 +42,7 @@ def main(link):
     with open('jumia.csv','a',newline='',encoding='utf-8-sig') as f:
         df.to_csv(f,encoding='utf-8-sig')        
 for i in range(1,num_of_pages+1):
-    url=f'https://www.jumia.com.eg/ar/catalog/?q={item}&page={num_of_pages}#catalog-listing'
+    url=f'https://www.jumia.com.eg/ar/catalog/?q={item}&page={i}#catalog-listing'
     main(url)
     print(i)
     
